@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <title>Primeiros passos com HTML</title>
+</head>
+
+<body>
+    <h1>Primeiros passos com HTML</h1>
+    <hr>
+    <h3 id="indice">Índice</h3>
+    <ol>
+        <li>Entendendo comunicação Client x Server</li>
+
+        <ul>
+            <li><a href="#historia">História da Web</a></li>
+            <li><a href="#clients">O que são Clients</a></li>
+            <li><a href="#servers">O que são Severs</a></li>
+            <li><a href="#linguagens">Linguagens de Programação</a></li>
+        </ul>
+
+        <li>Introdução ao HTML na prática</li>
+
+        <ul>
+            <li><a href="#inspetor">Inspetor de elementos</a></li>
+            <li><a href="#estrutura">Estrutura básica do HTML</a></li>
+            <li><a href="#falando">Falando sobre tags</a></li>
+            <li><a href="#atributos">Atributos das Tags</a></li>
+            <li><a href="#textos">Textos</a></li>
+            <li><a href="#listas">Listas Ordenadas e Não Ordenadas</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+    </ol>
+    <h2><mark>Entendendo comunicação Client x Server</mark></h2>
+
+    <h4 id="historia">História da Web</h4>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Neste módulo vimos quais foram os primeiros computadores da história da informática, dentre deles:
+    <ol>
+        <li>Harvard Mark I</li>
+        <li>Colossus</li>
+        <li>Eniac</li>
+    </ol>
+    Além disso, vimos também quais foram os grandes nomes da tecnologia:
+    <ul>
+        <li>Grace Murray Hopper (uma das primeiras progamadoras do Mark I)</li>
+        <li>Jaseph Licklider</li>
+        <li>Robert Kahn (criador do TCP/IP)</li>
+        <li>Tim Berners-Lee (inventor do WWW)</li>
+        <li>Mark Andreessen</li>
+        <li>Bill Gates (fundador da Microsoft)</li>
+        <li>Steve Jobs (fundador da Apple)</li>
+    </ul>
+    </p>
+
+    <h3 id="clients">O que são Clients</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Vimos que, em uma <strog>estrutura Cliente-Servidor</strog>, o lado "Client" se refere ao dispositivo (exemplos:
+        notebooks, celulares) que está consumindo informações da
+        internet através de protocolos de rede que se conectam com servidores.</p>
+    <p>Aprendemos a importância de se considerar diferentes resoluções na criação de websites (<u>responsividade</u>) e
+        também a compatibilidade entre navegadores (browsers)
+        com o uso de boas práticas e testes.</p>
+    <p><u>Navegadores</u> são programas criados por empresas para interpretar os arquivos que vêem dos servidores web.
+    </p>
+    <p>As <u>aplicações web</u> são soluções criadas que possuem a internet como meio de comunicação entre client x
+        server não sendo necessário a sua instalação.</p>
+
+    <h3 id="servers">O que são Servers</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>O <u>servidor</u> é o componente do sistema que fornece os serviços ou recursos solicitados pelos clientes. Estes
+        servidores podem ser um computador projetado especificamente
+        para gerenciar e fornecer serviços aos clientes, ou ainda, um software que é executado em um servidor de rede.
+    </p>
+    <p>Existem diversos tipos de servidores, como por exemplo:
+    <ul>
+        <li>Arquivos</li>
+        <li>Segurança</li>
+        <li>Streaming</li>
+        <li>E-mail</li>
+        <li>Web</li>
+        <li>Proxy</li>
+        <li>Firewall</li>
+        <li>DNS (Domain Name Service)</li>
+    </ul>
+    O servidor web criado dentro de uma rede corporativa (por exemplo), que não é acessado pela internet, é chamado de
+    <i>Intranet.</i>
+    </p>
+
+
+    <h3 id="linguagens">Linguagens de Programação</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p><u>Linguagem de Programação</u> é uma linguagem escrita e formal que especifica um conjunto de instruções e
+        regras usadas para gerar programas (software)</p>
+    <p>As 5 linguagens mais utilizadas em 2022, de acordo com a RedMonk são:
+    <ol>
+        <li>Javascript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>C#</li>
+    </ol>
+    </p>
+    <p>Linguagem Server-Side: são linguagens que são executadas no servidor. Alguns exemplos:
+    <ul>
+        <li>PHP</li>
+        <li>Ruby</li>
+        <li>C#</li>
+        <li>Javascript</li>
+        <li>Java</li>
+    </ul>
+    </p>
+    <p>Linguagem Client-Side: são linguagens que são executadas no cliente. Como por exemplo, o Javascript.</p>
+
+
+    <h2><mark>Introdução ao HTML na prática</mark></h2>
+
+    <h3 id="inspetor">Inspetor de elementos</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Vimos como funciona a ferramenta "Inspetor de elementos", presente nos navegadores web, e as possibilidades de estudo e testes em páginas web.</p>
+
+    <h3 id="estrutura">Estrutura básica do HTML</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Um documento HTML válido precisa seguir obrigatoriamente a estrutura composta pelas tags:
+        <ul>
+            <li>html (Tag de início, dentro da qual é necessário declarar as tags filhas: head e body)</li>
+            <li>head (contém informações sobre o documento HTML que são de interesse somente do navegador e para outros serviços da web)</li>
+            <li>body (contém o corpo de um documento HTML, que é exibido pelo navegador, ou sejá, é o conteúdo visível do site)</li>
+        </ul>
+    <h3 id="falando">Falando sobre tags</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Aprendemos que Tags HTML são instruções que informam ao navegador como formatar o texto.</p>
+
+    <h3 id="atributos">Atributos das Tags</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Atributos são as propriedades que uma tag pode ter. Existem atributros genéricos (que qualquer tag pode ter) e atributos
+        específicos para determinadas tags.
+    </p>
+
+    <h3 id="textos">Textos</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Umas das tags específicas para textos são:
+        <ul>
+            <li>Tag de parágrafo (p)</li>
+            <li>Tag de título (h1 até h6)</li>
+            <li>Tag de negrito (b)</li>
+            <li>Tag de itálico (i)</li>
+            <li>Tag de Elemento HTML de citação de bloco (blockquote)</li>
+        </ul>
+    </p>
+
+    <h3 id="listas">Listas Ordenadas e Não Ordenadas</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>Vimos que existem duas formas de criar listas no html, sendo elas: listas ordenadas (ol) ou listas não ordenadas (ul).</p>
+    <p>A diferença entre elas é que as listas ordenadas apresentam um contagem de seus itens enquando a não ordenada apresenta apenas marcadores em seus itens.</p>
+    
+
+    <h3 id="links">Links</h3>
+    <small><a href="#indice">(Voltar)</a></small>
+    <p>A HTML usa a tag (a) (âncora) para criar um vínculo (link) com outro documento. Uma âncora pode apontar para qualquer recurso na Web (uma página em HTML, 
+    uma imagem, um arquivo de som) ou um ponto específico dentro da própria página (exemplo: botão de voltar para o topo da página).</p>
+
+</body>
+
+</html>
